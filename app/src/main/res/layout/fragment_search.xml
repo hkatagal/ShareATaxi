@@ -1,0 +1,182 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ScrollView02"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.harishkumar.uimaterialtest.FragmentSearch">
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+
+        <ImageView
+            android:id="@+id/date_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_calendar" />
+
+        <EditText
+            android:id="@+id/select_date_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date_srh"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/date_srh"
+            android:focusable="false"
+            android:text="Select Date"
+            android:textAllCaps="false" />
+
+        <ImageView
+            android:id="@+id/time_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date_srh"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/select_date_srh"
+            android:src="@drawable/ic_clock" />
+
+        <EditText
+            android:id="@+id/select_time_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/date_srh"
+
+            android:layout_toRightOf="@+id/time_srh"
+            android:focusable="false"
+            android:text="Select Time"
+            android:textAllCaps="false" />
+
+
+        <TextView
+            android:id="@+id/from_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/date_srh"
+            android:text="From"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/marker_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from_srh"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_map_marker" />
+
+        <EditText
+            android:id="@+id/FromAddress_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from_srh"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/marker_srh"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/city_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FromAddress_srh"
+            android:layout_below="@+id/FromAddress_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Enter City" />
+
+        <EditText
+            android:id="@+id/state_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FromAddress_srh"
+            android:layout_below="@+id/city_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Enter State" />
+
+
+        <EditText
+            android:id="@+id/zip_code_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/FromAddress_srh"
+            android:layout_below="@+id/state_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Zip Code" />
+
+        <TextView
+            android:id="@+id/dest_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/zip_code_srh"
+            android:layout_marginTop="20dp"
+            android:text="Destination"
+            android:textSize="25dp" />
+
+        <ImageView
+            android:id="@+id/marker1_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dest_srh"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_map_marker"
+            android:textAllCaps="false" />
+
+        <EditText
+            android:id="@+id/DestAddress_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dest_srh"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/marker1_srh"
+            android:hint="Address" />
+
+        <EditText
+            android:id="@+id/destcity_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DestAddress_srh"
+            android:layout_below="@+id/DestAddress_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Enter City" />
+
+        <EditText
+            android:id="@+id/deststate_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DestAddress_srh"
+            android:layout_below="@+id/destcity_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Enter State" />
+
+
+        <EditText
+            android:id="@+id/destzip_srh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DestAddress_srh"
+            android:layout_below="@+id/deststate_srh"
+            android:layout_marginTop="10dp"
+            android:hint="Zip Code" />
+
+        <Button
+            android:id="@+id/submitbtn_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SEARCH"
+            android:layout_below="@+id/destzip_srh"
+            android:layout_alignLeft="@+id/destzip_srh"/>
+        <Button
+            android:id="@+id/resetbtn_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESET"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/time_srh"
+            android:layout_toEndOf="@+id/time_srh" />
+
+    </RelativeLayout>
+</ScrollView>

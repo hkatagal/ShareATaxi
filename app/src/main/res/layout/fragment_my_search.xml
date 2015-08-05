@@ -1,0 +1,327 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="2dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin">
+        <!--tools:context="com.example.harishkumar.uimaterialtest.MainActivity2Activity"-->
+
+        <TextView
+            android:id="@+id/my_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Request"
+            android:textColor="#6f80ff"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/taxi_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/my_srh"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/my_srh"
+            android:adjustViewBounds="true"
+            android:maxHeight="25dp"
+            android:maxWidth="25dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_taxi" />
+
+        <TextView
+            android:id="@+id/booking_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/taxi_srh"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/taxi_srh"
+            android:text="Booking"
+            android:textColor="#6f80ff"
+            android:textSize="20sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/calen_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/my_srh"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_calendar" />
+
+        <TextView
+            android:id="@+id/mydate_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calen_srh"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/calen_srh"
+            android:text="Apr 16 2015"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/clock_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/calen_srh"
+            android:layout_marginLeft="20dp"
+
+            android:layout_toRightOf="@+id/mydate_srh"
+            android:adjustViewBounds="true"
+            android:maxHeight="30dp"
+            android:maxWidth="30dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_clock" />
+
+        <TextView
+            android:id="@+id/mytime_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/clock_srh"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/clock_srh"
+            android:text="15:55"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/from_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calen_srh"
+            android:layout_marginTop="10dp"
+            android:text="From:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mark_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from_srh"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_map_marker" />
+
+        <TextView
+            android:id="@+id/frm_address_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/from_srh"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/mark_srh"
+            android:text="Address:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/addfrom_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/frm_address_srh"
+            android:layout_below="@+id/from"
+            android:layout_marginLeft="10dp"
+            android:maxLines="2"
+            android:ellipsize="none"
+            android:layout_toRightOf="@+id/frm_address_srh"
+            android:text="700 Health Sciences Dr Chapin Apt "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/frm_city_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frm_address_srh"
+            android:layout_below="@+id/frm_address_srh"
+            android:text="City:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/cityfrom_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/frm_city_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/frm_address_srh"
+            android:layout_toRightOf="@+id/frm_city_srh"
+            android:text="Stony Brook"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/frm_state_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/frm_address_srh"
+            android:layout_below="@+id/frm_city_srh"
+            android:text="State:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/statefrom_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/frm_state_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/frm_city_srh"
+            android:layout_toRightOf="@+id/frm_state_srh"
+            android:text="New York"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/frm_zip_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignLeft="@+id/frm_address_srh"
+            android:layout_below="@+id/frm_state_srh"
+            android:text="Zip Code:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/zipfrom_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/frm_zip_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/frm_state_srh"
+            android:layout_toRightOf="@+id/frm_zip_srh"
+            android:text="11790"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dest_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frm_zip_srh"
+            android:layout_marginTop="10dp"
+            android:text="Destination:"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/mark2_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dest_srh"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="true"
+            android:maxHeight="20dp"
+            android:maxWidth="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_map_marker" />
+
+        <TextView
+            android:id="@+id/dest_address_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/dest_srh"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/mark2_srh"
+            android:text="Address:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/addrdest_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dest_address_srh"
+            android:layout_below="@+id/dest_srh"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/dest_address_srh"
+            android:text="700 Health Sciences Dr Chapin Apt "
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dest_city_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dest_address_srh"
+            android:layout_below="@+id/dest_address_srh"
+            android:text="City:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/citydest_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dest_city_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/dest_address_srh"
+            android:layout_toRightOf="@+id/dest_city_srh"
+            android:text="Stony Brook"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dest_state_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dest_address_srh"
+            android:layout_below="@+id/dest_city_srh"
+            android:text="State:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/statedest_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dest_state_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/dest_city_srh"
+            android:layout_toRightOf="@+id/dest_state_srh"
+            android:text="New York"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dest_zip_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/frm_address_srh"
+            android:layout_below="@+id/dest_state_srh"
+            android:text="Zip Code:"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/zipdest_show_srh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dest_zip_srh"
+            android:layout_alignLeft="@+id/addfrom_show_srh"
+            android:layout_below="@+id/dest_state_srh"
+            android:layout_toRightOf="@+id/dest_zip_srh"
+            android:text="11790"
+            android:textSize="17sp" />
+
+       <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUBMIT"
+
+            android:layout_below="@+id/zipdest_show_srh"
+            android:layout_alignRight="@+id/clock_srh"
+            android:layout_alignEnd="@+id/clock_srh"
+            android:layout_marginTop="15dp"
+            android:visibility="invisible"
+            />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Share A Taxi</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="open_drawer">OPEN</string>
+    <string name="close_drawer">CLOSE</string>
+    <string-array name="tabs">
+        <item>MY REQUESTS</item>
+        <item>SHARED REQUESTS</item>
+        <item>REQUEST TO SHARE</item>
+        <item>SEARCH FOR TAXI</item>
+    </string-array>
+
+</resources>
